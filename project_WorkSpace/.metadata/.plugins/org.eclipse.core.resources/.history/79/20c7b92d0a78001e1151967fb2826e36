@@ -1,0 +1,16 @@
+/*
+ * main.c
+ *
+ *  Created on: Oct 31, 2023
+ *      Author: BILAL
+ */
+
+#include "../MCAL/gpio.h"
+#include "../MCAL/adc.h"
+
+
+
+void main(void)
+{
+	ADC_ConfigType adc_config = {};
+}

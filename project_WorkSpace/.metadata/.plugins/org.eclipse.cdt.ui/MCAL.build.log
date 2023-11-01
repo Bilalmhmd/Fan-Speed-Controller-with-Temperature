@@ -1,0 +1,11 @@
+18:05:41 **** Incremental Build of configuration Debug for project MCAL ****
+make all 
+Building target: MCAL.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MCAL.map -mmcu=atmega32 -o "MCAL.elf"  ./PWM0.o ./adc.o ./gpio.o   
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o:(.init9+0x0): undefined reference to `main'
+make: *** [MCAL.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+18:05:42 Build Failed. 2 errors, 0 warnings. (took 198ms)
+

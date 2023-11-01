@@ -1,0 +1,21 @@
+/*
+ * main.c
+ *
+ *  Created on: Oct 31, 2023
+ *      Author: BILAL
+ */
+
+#include "../MCAL/gpio.h"
+#include "../MCAL/adc.h"
+
+
+
+void main(void)
+{
+	//initialize the ADC driver.
+	ADC_ConfigType adc_config = {Internal_2_56V,F_CPU_8};
+	ADC_init(&adc_config);
+
+	//Initialize the LCD driver.
+
+}

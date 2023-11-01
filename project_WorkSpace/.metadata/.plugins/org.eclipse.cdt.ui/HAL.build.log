@@ -1,0 +1,33 @@
+18:08:20 **** Incremental Build of configuration Debug for project HAL ****
+make all 
+Building file: ../DC_Motor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"DC_Motor.d" -MT"DC_Motor.o" -c -o "DC_Motor.o" "../DC_Motor.c"
+In file included from ../DC_Motor.c:8:
+../DC_Motor.h:11:23: error: std_types.h: No such file or directory
+In file included from ../DC_Motor.c:8:
+../DC_Motor.h:47: error: expected declaration specifiers or '...' before 'uint8'
+../DC_Motor.c:9:18: error: gpio.h: No such file or directory
+../DC_Motor.c:11:18: error: PWM0.h: No such file or directory
+../DC_Motor.c: In function 'DcMotor_Init':
+../DC_Motor.c:22: warning: implicit declaration of function 'GPIO_setupPinDirection'
+../DC_Motor.c:22: error: 'PORTC_ID' undeclared (first use in this function)
+../DC_Motor.c:22: error: (Each undeclared identifier is reported only once
+../DC_Motor.c:22: error: for each function it appears in.)
+../DC_Motor.c:22: error: 'PIN0_ID' undeclared (first use in this function)
+../DC_Motor.c:22: error: 'PIN_OUTPUT' undeclared (first use in this function)
+../DC_Motor.c:23: error: 'PIN1_ID' undeclared (first use in this function)
+../DC_Motor.c:26: warning: implicit declaration of function 'GPIO_writePin'
+../DC_Motor.c:26: error: 'LOGIC_LOW' undeclared (first use in this function)
+../DC_Motor.c: At top level:
+../DC_Motor.c:36: error: expected declaration specifiers or '...' before 'uint8'
+../DC_Motor.c: In function 'DcMotor_Rotate':
+../DC_Motor.c:38: warning: implicit declaration of function 'GPIO_writePort'
+../DC_Motor.c:38: error: 'PORTC_ID' undeclared (first use in this function)
+../DC_Motor.c:39: warning: implicit declaration of function 'PWM_Timer0_Start'
+../DC_Motor.c:39: error: 'speed' undeclared (first use in this function)
+make: *** [DC_Motor.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+18:08:20 Build Failed. 13 errors, 4 warnings. (took 205ms)
+

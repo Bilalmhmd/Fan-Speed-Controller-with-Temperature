@@ -1,0 +1,142 @@
+11:29:31 **** Incremental Build of configuration Debug for project Fan_Controller ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Fan_Controller.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9486 bytes (28.9% Full)
+(.text + .data + .bootloader)
+
+Data:        294 bytes (14.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:30:37 **** Incremental Build of configuration Debug for project Fan_Controller ****
+make all 
+Building file: ../Application/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"Application/main.d" -MT"Application/main.o" -c -o "Application/main.o" "../Application/main.c"
+../Application/main.c:17: warning: return type of 'main' is not 'int'
+Finished building: ../Application/main.c
+ 
+Building target: Fan_Controller.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Fan_Controller.map -mmcu=atmega32 -o "Fan_Controller.elf"  ./MCAL/PWM0.o ./MCAL/adc.o ./MCAL/gpio.o  ./HAL/DC_Motor.o ./HAL/lcd.o ./HAL/lm35_sensor.o  ./Application/main.o   
+Finished building target: Fan_Controller.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Fan_Controller.elf  >"Fan_Controller.lss"
+Finished building: Fan_Controller.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Fan_Controller.elf  "Fan_Controller.hex"
+Finished building: Fan_Controller.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Fan_Controller.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9468 bytes (28.9% Full)
+(.text + .data + .bootloader)
+
+Data:        294 bytes (14.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:30:50 **** Incremental Build of configuration Debug for project Fan_Controller ****
+make all 
+Building file: ../Application/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"Application/main.d" -MT"Application/main.o" -c -o "Application/main.o" "../Application/main.c"
+../Application/main.c:17: warning: return type of 'main' is not 'int'
+Finished building: ../Application/main.c
+ 
+Building target: Fan_Controller.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Fan_Controller.map -mmcu=atmega32 -o "Fan_Controller.elf"  ./MCAL/PWM0.o ./MCAL/adc.o ./MCAL/gpio.o  ./HAL/DC_Motor.o ./HAL/lcd.o ./HAL/lm35_sensor.o  ./Application/main.o   
+Finished building target: Fan_Controller.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Fan_Controller.elf  >"Fan_Controller.lss"
+Finished building: Fan_Controller.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Fan_Controller.elf  "Fan_Controller.hex"
+Finished building: Fan_Controller.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Fan_Controller.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9476 bytes (28.9% Full)
+(.text + .data + .bootloader)
+
+Data:        294 bytes (14.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:31:10 **** Incremental Build of configuration Debug for project Fan_Controller ****
+make all 
+Building file: ../Application/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"Application/main.d" -MT"Application/main.o" -c -o "Application/main.o" "../Application/main.c"
+../Application/main.c:17: warning: return type of 'main' is not 'int'
+Finished building: ../Application/main.c
+ 
+Building target: Fan_Controller.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Fan_Controller.map -mmcu=atmega32 -o "Fan_Controller.elf"  ./MCAL/PWM0.o ./MCAL/adc.o ./MCAL/gpio.o  ./HAL/DC_Motor.o ./HAL/lcd.o ./HAL/lm35_sensor.o  ./Application/main.o   
+Finished building target: Fan_Controller.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Fan_Controller.elf  >"Fan_Controller.lss"
+Finished building: Fan_Controller.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Fan_Controller.elf  "Fan_Controller.hex"
+Finished building: Fan_Controller.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Fan_Controller.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9436 bytes (28.8% Full)
+(.text + .data + .bootloader)
+
+Data:        294 bytes (14.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:31:12 **** Incremental Build of configuration Debug for project Fan_Controller ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Fan_Controller.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9436 bytes (28.8% Full)
+(.text + .data + .bootloader)
+
+Data:        294 bytes (14.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
